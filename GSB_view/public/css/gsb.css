@@ -1,0 +1,162 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0 2%;
+    margin: 0;
+}
+
+nav .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+nav .menu .profile {
+    display: flex;
+    align-items: center;
+  }
+nav .menu .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+nav .menu .profile h1 {
+    margin-left: 10px;
+}
+nav .menu ul {
+    display: flex;
+    list-style-type: none;        
+}
+nav .menu ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    float: left;
+    text-align: center;
+    position: relative;
+    
+}
+nav .menu ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav .menu a{
+    display: block;
+    color: #022641;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+nav .menu ul li:hover {
+    color: orange;
+}
+
+nav .menu > ul li:hover .sous{
+    display: block;
+ }
+.sous{
+     display: none;
+     box-shadow: 0px 1px 2px #CCC;
+     background-color: white;
+     position: absolute;
+     width: 100%;
+     z-index: 1000
+ }
+
+.sous li{
+     float: none;
+     text-align: left;
+ }
+.sous a{
+     padding: 10px;
+     border-bottom: none;
+ }
+.sous a:hover{
+     border-bottom: none;
+     background-color: RGBa(200,200,200,0.1);
+ }
+/*Connexion*/
+
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+/*popup*/
+.btnPop{
+    background-color: white;
+    padding: 1em 2em;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.btnPop:hover{
+    background-color: gainsboro;
+}
+
+.overlay{
+    position: fixed;
+    left: 0px;
+    top: 1px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup{
+    margin: 20% auto;
+    width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0 5);
+    padding: 10px;
+}
+
+.btnClose{
+    float: right;
+    cursor: pointer;
+}
