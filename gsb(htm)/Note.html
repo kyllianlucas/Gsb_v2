@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gsb.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="profile">
+            <a href= "index.html" class="img"><img class="logo" src="image/GSB.png"profile photo></a>
+        </div>
+        <ul>
+            <li><a href="Index.html">Menu</a></li>
+            <li><a href="Connexion.php">Connexion / S'enregistrer</a></li>
+            <li class="deroulant">Fiche de frais &ensp;</a>
+            <ul class="sous">
+                <li><a href="Note.html">Note de frais</a></li>
+                <li><a href="Fichedefrais.html">Voir mes fiches</a></li>
+            </ul>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <p>Dans le forfait de base vous avez:</p>
+        <li>750km</li>
+        <li>9 nuits d'hôtel</li>
+        <li>12 repas</li>
+    </ul>
+    <table border="8" align="center">
+        <tr width><th width="12.5%">Date</th><th width="12.5%">Description</th><th width="12.5%">Hotel</th><th width="12.5%">Kilometrage</th><th width="12.5%">Repas</th><th width="12.5%">Divers</th><th width="12.5%">Kilometrage au debut</th><th width="12.5%">Kilometrage a l'arrivé</th></tr>
+        <tr><td><input type="date" width="12.5%" align="center"></td><td><input type="text" width="12.5%"></td><td><input type="text" width="12.5%"></td><td><input type="number" width="12.5%"></td><td><input type="text" width="12.5%"></td><td><input type="text" width="12.5%"></td><td><input type="number" width="12.5%"></td><td><input type="number" width="12.5%"></td></tr>
+    </table>
+    <input type="button" id="envoie" name="envoie" value="Valider">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="gsb.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
